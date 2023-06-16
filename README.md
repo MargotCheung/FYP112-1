@@ -1,2 +1,2 @@
-# FYP112-1
-FYP 112-1 Course Selection Handbook
+# FCU宇宙選課避雷手札
+112-1 選課系統 
