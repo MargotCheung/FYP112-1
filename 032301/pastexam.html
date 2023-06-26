@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dcard-like Interface</title>
+    <link rel="stylesheet" href="pastexam.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar-container">
+                <a href="/" class="logo">
+                    <img src="home-icon.png" alt="Home">
+                </a>
+                <div class="navbar-right">
+                    <div class="search-container">
+                        <input type="text" placeholder="搜索...">
+                        <button type="submit">搜索</button>
+                    </div>
+                    <div class="login-container">
+                        <a href="#">登录</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="#">目录项 1</a></li>
+                <li><a href="#">目录项 2</a></li>
+                <li><a href="#">目录项 3</a></li>
+                <!-- 更多目录项... -->
+            </ul>
+        </aside>
+
+        <main>
+            <div class="content">
+                <h2>考古題</h2>
+                
+                <div class="dropdown-container">
+                    <div class="dropdown">
+                        <select>
+                            <option value="">課程名稱</option>
+                            <option value="option1">程設一二</option>
+                            <option value="option2">邏輯設計</option>
+                            <option value="option3">資料結構</option>
+                            <!-- 添加更多选项... -->
+                        </select>
+                    </div>
+                    <div class="dropdown">
+                        <select>
+                            <option value="">教授名稱</option>
+                            <option value="option1">老王</option>
+                            <option value="option2">老薛</option>
+                            <option value="option3">老李</option>
+                            <!-- 添加更多选项... -->
+                        </select>
+                    </div>
+                    <!-- 添加更多下拉菜单... -->
+                    <button class="search-button">搜索</button>
+                </div>
+                
+                <div class="teacher">
+                    <h3>教授: XXX</h3>
+                </div>
+                <div class="post">
+                    <div class="post-item">
+                        <div class="post-item-content">
+                            <div class="post-item-inner">
+                                <button class="post-button" onclick="handleButtonClick(1)">
+                                    <span class="button-image" style="background-image: url('image1.png')"></span>
+                                    <span class="button-text">帖子介绍 1</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <div class="post-item-content">
+                            <div class="post-item-inner">
+                                <button class="post-button" onclick="handleButtonClick(2)">
+                                    <span class="button-image" style="background-image: url('image2.png')"></span>
+                                    <span class="button-text">帖子介绍 2</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <div class="post-item-content">
+                            <div class="post-item-inner">
+                                <button class="post-button" onclick="handleButtonClick(3)">
+                                    <span class="button-image" style="background-image: url('image3.png')"></span>
+                                    <span class="button-text">帖子介绍 3</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-item">
+                        <div class="post-item-content">
+                            <div class="post-item-inner">
+                                <button class="post-button" onclick="handleButtonClick(4)">
+                                    <span class="button-image" style="background-image: url('image4.png')"></span>
+                                    <span class="button-text">帖子介绍 4</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 更多帖子... -->
+            </div>
+        </main>
+        
+        
+
+        <div class="ratings">
+            <h2>评分</h2>
+            <ul>
+                <li><a href="#">A XXXX 95</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+                <li><a href="#">F</a></li>
+                <li><a href="#">G</a></li>
+                <li><a href="#">H</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>版权所有 &copy; 2023 My Website</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dcard-like Interface</title>
+    <link rel="stylesheet" href="profile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navbar-container">
+                <a href="/" class="logo">
+                    <img src="home-icon.png" alt="Home">
+                </a>
+                <div class="navbar-right">
+                    <div class="search-container">
+                        <input type="text" placeholder="搜索...">
+                        <button type="submit">搜索</button>
+                    </div>
+                    <div class="login-container">
+                        <a href="#">登录</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="#">目录项 1</a></li>
+                <li><a href="#">目录项 2</a></li>
+                <li><a href="#">目录项 3</a></li>
+                <!-- 更多目录项... -->
+            </ul>
+        </aside>
+
+        <main>
+            <div class="content">
+                <div class="profile">
+                    <img src="avatar.png" class="avatar" alt="头像">
+                </div>
+        
+                <div class="course-results">
+                    <h3>历届课程学习成果</h3>
+        
+                    <div class="dropdown-container">
+                        <div class="dropdown">
+                            <select>
+                                <option value="">课程名称</option>
+                                <option value="option1">程设一二</option>
+                                <option value="option2">逻辑设计</option>
+                                <option value="option3">数据结构</option>
+                                <!-- 添加更多选项... -->
+                            </select>
+                        </div>
+                        <div class="dropdown">
+                            <select>
+                                <option value="">分数</option>
+                                <!-- 添加1-100的选项 -->
+                                <?php
+                                    for ($i = 1; $i <= 100; $i++) {
+                                        echo "<option value='$i'>$i</option>";
+                                    }
+                                ?>
+                            </select>
+                        </div>
+                        <button class="search-button">輸入</button>
+                    </div>
+        
+                    <div class="scroll-container">
+                        <ul class="result-list" id="result-list">
+                            <!-- 这里会动态添加搜索结果 -->
+                            
+                            <li>程式一二 100</li>
+                            <li>程式一二 100</li>
+                            <li>程式一二 100</li>
+                            <li>程式一二 100</li>
+                            <li>程式一二 100</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="function-boxes">
+                    <div class="function-box">
+                        <button class="box-button">发布的留言</button>
+                    </div>
+                    <div class="function-box">
+                        <button class="box-button">留言爱心数</button>
+                    </div>
+                    <div class="function-box">
+                        <button class="box-button">分享的考古题</button>
+                    </div>
+                    <div class="function-box">
+                        <button class="box-button">新增考古题</button>
+                    </div>
+                    <div class="function-box">
+                        <button class="box-button">代订</button>
+                    </div>
+                    <div class="function-box">
+                        <button class="box-button">代订</button>
+                    </div>
+                </div>
+
+                <div class="coin-record">
+                    <h3>Coin记录</h3>
+                    <div class="scroll-container">
+                        <ul class="coin-list">
+                            <?php
+                            // 示例项，可根据后端生成的内容动态添加
+                            for ($i = 1; $i <= 20; $i++) {
+                                echo "<li>Coin记录 $i</li>";
+                            }
+                            ?>
+                            <li>Coin记录 1</li>
+                            <li>Coin记录 2</li>
+                            <li>Coin记录 3</li>
+                            <li>Coin记录 4</li>
+                            <li>Coin记录 5</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        
+        
+
+        <div class="ratings">
+            <h2>评分</h2>
+            <ul>
+                <li><a href="#">A XXXX 95</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+                <li><a href="#">F</a></li>
+                <li><a href="#">G</a></li>
+                <li><a href="#">H</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>版权所有 &copy; 2023 My Website</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
