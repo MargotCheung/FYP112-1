@@ -1,12 +1,14 @@
 /* 全局样式 */
 body {
     font-family: Arial, sans-serif;
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #ffcdcd;
+    background-color: #f5ded0;
 }
 
 .container {
+    min-height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -14,9 +16,10 @@ body {
     margin: 0 auto;
 }
 
+
 /* 页眉样式 */
 header {
-    background-color: #db7979;
+    background-color: #DDBEA9;
     color: #fff;
     padding: 10px;
 }
@@ -51,18 +54,12 @@ header {
 
 .search-container button {
     padding: 8px 16px;
-    background-color: #c94848;
+    background-color: #DDBEA9;
     border: none;
     border-radius: 0 4px 4px 0;
     color: #fff;
     cursor: pointer;
 }
-
-.login-container a {
-    color: #fff;
-    text-decoration: none;
-}
-
 /* 侧边栏样式 */
 .sidebar {
     width: 100px;
@@ -170,7 +167,7 @@ p {
     padding: 6px 12px;
     font-size: 16px;
     height: 30px;
-    background-color: #c94848;
+    background-color: #c8ae8c;
     border: none;
     border-radius: 4px;
     color: #fff;
@@ -178,7 +175,7 @@ p {
 }
 
 .search-button:hover {
-    background-color: #b53e3e;
+    background-color: #b5853e;
 }
 
 .search-button:focus {

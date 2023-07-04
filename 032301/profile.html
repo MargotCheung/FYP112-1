@@ -30,9 +30,14 @@
     <div class="container">
         <aside class="sidebar">
             <ul class="sidebar-menu">
-                <li><a href="#">目录项 1</a></li>
-                <li><a href="#">目录项 2</a></li>
-                <li><a href="#">目录项 3</a></li>
+                <li><a href="#">大一</a></li>
+                <li><a href="#">大二</a></li>
+                <li><a href="#">大三</a></li>
+                <li><a href="#">大四</a></li>
+                <li><a href="#">通識</a></li>
+                <li><a href="#">考古題</a></li>
+                <li><a href="#">Coin Store</a></li>
+                <li><a href="#">換課區</a></li>
                 <!-- 更多目录项... -->
             </ul>
         </aside>
@@ -49,7 +54,17 @@
                     <div class="dropdown-container">
                         <div class="dropdown">
                             <select>
-                                <option value="">课程名称</option>
+                                <option value="">年級</option>
+                                <option value="option1">大一</option>
+                                <option value="option2">大二</option>
+                                <option value="option3">大三</option>
+                                <option value="option3">大四</option>
+                                <!-- 添加更多选项... -->
+                            </select>
+                        </div>
+                        <div class="dropdown">
+                            <select>
+                                <option value="">課程名稱</option>
                                 <option value="option1">程设一二</option>
                                 <option value="option2">逻辑设计</option>
                                 <option value="option3">数据结构</option>
@@ -58,7 +73,7 @@
                         </div>
                         <div class="dropdown">
                             <select>
-                                <option value="">分数</option>
+                                <option value="">分數</option>
                                 <!-- 添加1-100的选项 -->
                                 <?php
                                     for ($i = 1; $i <= 100; $i++) {
