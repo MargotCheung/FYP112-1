@@ -7,7 +7,8 @@
 1. 到路徑 xampp > mysql資料夾
 
 2. 把rar裡面所有檔案覆蓋 mysql資料夾 (參考下面圖片)
-![image](https://github.com/MargotCheung/FYP112-1/assets/61350380/ee6b0c86-8f9d-4352-9ac5-c2e25467b888)
+
+![image](https://github.com/MargotCheung/FYP112-1/assets/61350380/68057728-f03f-4e47-80d1-44cd9b10c008)
 
 3. 重開mysql及database
 
