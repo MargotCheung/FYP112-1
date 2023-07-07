@@ -11,7 +11,7 @@
 
 ![image](https://github.com/MargotCheung/FYP112-1/assets/61350380/62e4de32-377b-4dfd-b7dd-fd3803aebd37 | width=50)
 
-![image]([https://example.com/image.png](https://github.com/MargotCheung/FYP112-1/assets/61350380/62e4de32-377b-4dfd-b7dd-fd3803aebd37)https://github.com/MargotCheung/FYP112-1/assets/61350380/62e4de32-377b-4dfd-b7dd-fd3803aebd37){width=200px height=100px}
+![image](https://github.com/MargotCheung/FYP112-1/assets/61350380/62e4de32-377b-4dfd-b7dd-fd3803aebd37){width=200px height=100px}
 
 3. 重開mysql及database
 
