@@ -6,7 +6,7 @@
 
 <style>
 input {
-    border-radius: 5px;
+    border-radius: 20px;
 }
 </style>
 
