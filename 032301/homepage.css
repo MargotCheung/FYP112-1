@@ -1,22 +1,25 @@
 /* 全局样式 */
 body {
     font-family: Arial, sans-serif;
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #ffcdcd;
+    background-color: #f5ded0;
 }
 
 .container {
+    min-height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 1000px;
     margin: 0 auto;
+    
 }
 
 /* 页眉样式 */
 header {
-    background-color: #db7979;
+    background-color: #DDBEA9;
     color: #fff;
     padding: 10px;
 }
@@ -51,18 +54,13 @@ header {
 
 .search-container button {
     padding: 8px 16px;
-    background-color: #c94848;
+    background-color: #DDBEA9;
     border: none;
     border-radius: 0 4px 4px 0;
     color: #fff;
     cursor: pointer;
 }
 
-.login-container a {
-    color: #fff;
-    text-decoration: none;
-    flex: 1 0 20%;
-}
 
 /* 侧边栏样式 */
 .sidebar {
@@ -143,86 +141,43 @@ footer {
 }
 
 /* main */
-.dropdown {
-    margin-bottom: 20px;
+.carousel-item img {
+    max-width: 800px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
 }
 
-.dropdown select {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
+.carousel-item {
+    position: relative;
 }
-  
-.content {
-    max-width: 800px;
-    margin: 0 auto;
+
+.carousel-item .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 80px;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.post {
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #fff;
-    width: 100%;
-    max-width: 600px;
-}
-
-.post-title {
-    display: block;
-    width: 100%;
-    background-color: #eaa2a2;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: bold;
+.carousel-item h2, .carousel-item p {
+    margin: 0;
     text-align: left;
-    cursor: pointer;
 }
 
-.post-title:hover {
-background-color: #e0e0e0;
-}
-
-.post-title:focus {
-outline: none;
-}
-  
-  
-
-.post-content {
-    margin-bottom: 10px;
-}
-
-.post-author {
-    font-style: italic;
-    color: #888;
-}
-
-
-/* 页面内容样式 */
-main {
-    flex: 1;
-    background-color: #fff;
-    padding: 20px;
-}
-
-.content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-h2 {
+.carousel-item h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-p {
-    margin-bottom: 20px;
+.carousel-item p {
+    font-size: 16px;
+    margin-bottom: 5px;
 }
-
