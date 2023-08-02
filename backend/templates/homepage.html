@@ -98,10 +98,10 @@
             </div>
             <div class="content">
                 <h2>熱門</h2>
-                {% for name in course_name %}
+                {% for row in course_info %}
                 <div class="post">
-                    <button class="post-title">{{ name }} XXX老師</button>
-                    <p class="post-content">内容</p>
+                    <button class="post-title">{{row[2]}}</button>
+                    <p class="post-content">{{row[5]}}內容</p>
                     <p class="post-author">作者: John Doe</p>
                 </div>
                 {% endfor %}
@@ -136,6 +136,7 @@
 
      <script src="/static/js/lessonpage.js"></script>
      <script src="/static/js/scripts.js"></script>
+     <script>course_name</script>
 </body>
 
 </html>
