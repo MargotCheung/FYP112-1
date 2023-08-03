@@ -13,6 +13,6 @@ app = Flask(__name__)
 def home():
     return home_view()
 
-@app.route("/lesson")
-def lesson():
-    return lessonpage_view()
+@app.route("/lessonpage/<row_course_name>")
+def lesson(row_course_name):
+    return lessonpage_view(row_course_name)

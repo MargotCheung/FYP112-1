@@ -64,18 +64,18 @@
                     <div class="dropdown">
                         <select>
                             <option value="">課程名稱</option>
-                            <option value="option1">程設一二</option>
-                            <option value="option2">邏輯設計</option>
-                            <option value="option3">資料結構</option>
+                            {% for data in course_teacher_data %}
+                            <option value="{{ data[0] }}">{{ data[0] }}</option>
+                            {% endfor %}
                             <!-- 添加更多选项... -->
                         </select>
                     </div>
                     <div class="dropdown">
                         <select>
                             <option value="">教授名稱</option>
-                            <option value="option1">老王</option>
-                            <option value="option2">老薛</option>
-                            <option value="option3">老李</option>
+                            {% for data in course_teacher_data %}
+                            <option value="{{ data[1] }}">{{ data[1] }}</option>
+                            {% endfor %}
                             <!-- 添加更多选项... -->
                         </select>
                     </div>
@@ -84,7 +84,7 @@
                 </div>
                 
                 <div class="post">
-                    <button class="post-title">帖子标题 1</button>
+                    <button class="post-title">{{row_course_name}}</button>
                     <p class="post-content">帖子内容</p>
                     <p class="post-author">作者: John Doe</p>
                 </div>
@@ -95,15 +95,17 @@
             
                 <div class="comments" id="commentSection">
                     <h3>留言板</h3>
+                    {% for response in lesson_response %}
                     <div class="comment">
-                        <p class="comment-author">John Doe</p>
-                        <p class="comment-content">這是一條留言00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</p>
+                        <p class="comment-author">{{response[2]}}</p>
+                        <p class="comment-content">{{response[3]}}</p>
                         <div class="comment-footer">
                             <p class="comment-floor"></p>
                             <p class="comment-likes"></p>
                             <button class="comment-reply-button">回覆</button>
                         </div>
                     </div>
+                    {% endfor %}
                     <div class="add-comment">
                         <button class="add-comment-button">新增留言</button>
                     </div>

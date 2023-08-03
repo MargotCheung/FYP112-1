@@ -100,9 +100,11 @@
                 <h2>熱門</h2>
                 {% for row in course_info %}
                 <div class="post">
+                  <a href="{{ url_for('lesson', row_course_name=row[2]) }}">
                     <button class="post-title">{{row[2]}}</button>
-                    <p class="post-content">{{row[5]}}內容</p>
-                    <p class="post-author">作者: John Doe</p>
+                  </a>
+                  <p class="post-content">{{row[5]}}內容</p>
+                  <p class="post-author">作者: John Doe</p>
                 </div>
                 {% endfor %}
             </div>
